@@ -7,21 +7,27 @@
 .game1-parent {
   display: flex;
   flex-direction: column;
-  background-color: red;
+
   justify-content: space-around;
   min-height: 100vh;
+  background-color: black;
 }
 
-.game1-question {
+h2 {
   text-align: center;
-  background-color: green;
+
   width: 60%;
   margin: 0 auto;
+  font-size: 4rem;
+  color: #333;
+
+  text-shadow: 2px 2px 0 rgb(208, 211, 58), 2px -2px 0 rgb(208, 211, 58), -2px 2px 0 rgb(208, 211, 58), -2px -2px 0 rgb(208, 211, 58), 2px 0px 0 rgb(208, 211, 58), 0px 2px 0 rgb(208, 211, 58), -2px 0px 0 rgb(208, 211, 58), 0px -2px 0 rgb(208, 211, 58);
+
 }
 
 .game1-images-parent {
   display: flex;
-  background-color: blue;
+
   flex-direction: column;
 
 }
@@ -44,10 +50,25 @@
   background-color: yellow;
   width: 60%;
   margin: 0 auto;
+  font-size: 2rem;
+
 }
 
 .game1-next-button {
   background-color: white;
   width: 10%;
   margin: 0 auto;
+}
+
+.game1-images-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  margin: 25px;
+  width: 30%;
+  border-radius: 20px;
+  justify-content: space-around;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #333, 2px 5px 16px 0px #A59A22, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: inset -1px 3px 8px 5px #333, 2px 5px 16px 0px #A59A22;
 }

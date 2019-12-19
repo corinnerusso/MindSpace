@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useParams } from "react-router-dom";
+import ContextMessage from "../components/Context";
 
 import "../components/game1.css";
 
@@ -31,46 +32,50 @@ const images = [
 
 const Game1 = () => {
   let { id } = useParams();
+  const message = useContext(ContextMessage);
 
   return (
     <div className="game1-parent">
-      <div className="game1-question">{question[id]}</div>
+      <h2>{question[id]}</h2>
       <div className="game1-images-parent">
         <div className="game1-images-children1">
-          <div>
+          <div className="game1-images-container">
+            <p>{images[id][0].name}</p>
             <img
               className="game1-images-image"
               src={images[id][0].url}
               alt="planet"
             />
           </div>
-          <div>
+          <div className="game1-images-container">
             <img
               className="game1-images-image"
               src={images[id][1].url}
               alt="planet"
             />
+            <p>{images[id][1].name}</p>
           </div>
         </div>
         <div className="game1-images-children1">
-          <div>
+          <div className="game1-images-container">
+            <p>{images[id][2].name}</p>
             <img
               className="game1-images-image"
               src={images[id][2].url}
               alt="planet"
             />
           </div>
-          <div>
-            {" "}
+          <div className="game1-images-container">
             <img
               className="game1-images-image"
               src={images[id][3].url}
               alt="planet"
             />
+            <p>{images[id][3].name}</p>
           </div>
         </div>
       </div>
-      <div className="game1-message-crypt">msg</div>
+      <div className="game1-message-crypt">k{message}</div>
       <div className="game1-next-button">button</div>
     </div>
   );
