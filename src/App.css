@@ -38,15 +38,8 @@
 body, html {
 	background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
   background-color: black;
-  animation: space-animation 60s linear infinite;
+  animation: space-animation 40s linear infinite;
 }
-
-  background-size: 184px 92px;
-  box-shadow: inset 20px 2px 50px rgba(0,0,0,1), 0 0 100px rgba(79,193,233,0.4);
-	border-radius: 100%;
-	animation: animate 6s linear infinite;
-	transform: rotate(-15deg);
-
 
 @keyframes animate {
 	from {
