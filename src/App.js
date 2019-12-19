@@ -1,22 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Decrypt from "./components/Decrypt";
 import Game1 from "./components/Game1";
-import ContextMessage from "./components/Context";
+import { BrowserRouter } from "react-router-dom";
+import Context from "./components/Context";
 
 function App() {
+  const [count, setCount] = useState({
+    message: ["?", "?", "?", "?", "?", "?", "?", "?"]
+  });
   return (
-    <div className="App">
-      <ContextMessage.Provider>
+    <Context.Provider value={{ count, setCount }}>
+      <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/game1/:id" component={Game1} />
           <Route path="/decrypt" component={Decrypt} />
         </Switch>
-      </ContextMessage.Provider>
-    </div>
+      </BrowserRouter>
+    </Context.Provider>
   );
 }
 

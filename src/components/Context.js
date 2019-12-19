@@ -1,22 +1,5 @@
-import { createContext } from "react";
+import React, { useState } from "react";
 
-const ContextMessage = createContext(
-  "hello"
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   " ",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?",
-  //   "?"
-);
+const Context = React.createContext({});
 
-export default ContextMessage;
+export default Context;
