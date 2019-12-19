@@ -7,7 +7,7 @@ import "../components/game1.css";
 const question = [
   "Comment sappelle la planète la plus proche de la Terre ?",
   "Quel véhicule l'homme emploie-t-il pour aller dans l'espace ?",
-  "De quelle planète vient Choubaka",
+  "De quelle planète vient Choubaka ?",
   "Qui a découvert Titan, un satellite de Saturne ?"
 ];
 const images = [
@@ -66,14 +66,12 @@ const images = [
       name: "Kashyyyk"
     },
     {
-      url:
-        "https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdna.artstation.com%2Fp%2Fassets%2Fimages%2Fimages%2F011%2F291%2F646%2Flarge%2Fluis-carrasco-doom-e.jpg%3F1528828508",
+      url: "https://zupimages.net/up/19/51/soqa.jpg",
       isOk: false,
       name: "Doom"
     },
     {
-      url:
-        "https://slack-imgs.com/?c=1&o1=ro&url=http%3A%2F%2Fwww.fondsecran.eu%2Fa%2Fget_photo%2F169683%2F960%2F540",
+      url: "https://zupimages.net/up/19/51/zme6.jpg",
       isOk: false,
       name: "Smiley Planet"
     },
