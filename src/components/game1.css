@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game1-parent {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+.game1-question {
+  text-align: center;
+  background-color: green;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.game1-images-parent {
+  display: flex;
+  background-color: blue;
+  flex-direction: column;
+
+}
+
+.game1-images-children1 {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.game1-images-image {
+  background-color: grey;
+  height: 200px;
+  width: 200px;
+  margin: 10px 20px;
+}
+
+.game1-message-crypt {
+  background-color: yellow;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.game1-next-button {
+  background-color: white;
+  width: 10%;
+  margin: 0 auto;
+}
