@@ -14,10 +14,15 @@
 .title {
   font-family: 'STARWARS';
   font-size: 20vh;
+  text-align: center;
+  color: yellow;
 }
-.title, .regles { 
+.regles {
+  font-family: 'STARWARS';
+  font-size: 5vh;
   text-align: center;
   color: #fff;
+  margin: 30px;
 }
 .button {
   min-width: 100vh;
@@ -29,7 +34,7 @@
  }
 
 .play {
-  color: bla;
+  color: black;
   width: 18vw;
   height: 10vh;
   font-size: 5vh;

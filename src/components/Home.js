@@ -6,12 +6,7 @@ const Home = () => {
     <div className="home">
       <div className="title">MIND SPACE</div>
       <div className="regles">
-        Officia esse eiusmod sit officia tempor dolor aliquip enim ea ex minim
-        aliquip aute. Duis enim nostrud fugiat voluptate deserunt sint in dolor.
-        Velit adipisicing do nostrud aliquip. Sint ut dolor commodo elit
-        consectetur Lorem non occaecat sint occaecat et velit labore do. Aliqua
-        tempor dolore laborum magna nulla irure quis culpa. Dolore velit culpa
-        tempor nulla culpa.
+      Installé sur ton canapé, un laptop sur les jambes, tu reçois un SOS venu de l’espace. Tu dois résoudre des énigmes pour découvrir un message à délivrer à l’Univers !!
       </div>
       <div className="button">
         <Link to="/game">

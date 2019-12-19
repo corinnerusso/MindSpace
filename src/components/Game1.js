@@ -4,7 +4,7 @@ import "../components/game1.css";
 import Context from "./Context";
 
 const question = [
-  "Comment sappelle la planète la plus proche de la Terre ?",
+  "Comment s'appelle la planète la plus proche de la Terre ?",
   "Quel véhicule l'homme emploie-t-il pour aller dans l'espace ?",
   "De quelle planète vient Choubaka ?",
   "Qui a découvert Titan, un satellite de Saturne ?"
@@ -34,25 +34,25 @@ const images = [
   ],
   [
     {
-      url: "https://i.ytimg.com/vi/4x_M14Qc22E/hqdefault.jpg",
+      url: "https://zupimages.net/up/19/51/btqc.jpg",
       isOk: false,
-      name: "Une soucoupe volante"
+      name: "Un OVNI"
     },
     {
       url:
-        "https://images.unsplash.com/photo-1468530986413-2c93495ed020?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80",
+        "https://zupimages.net/up/19/51/oxj8.jpg",
       isOk: false,
       name: "Un avion"
     },
     {
       url:
-        "https://images.unsplash.com/photo-1543599723-86e84893ebba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80",
+        "https://zupimages.net/up/19/51/63es.jpg",
       isOk: true,
       name: "Une navette spatiale"
     },
     {
       url:
-        "https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fblog.csiro.au%2Fwp-content%2Fuploads%2F2016%2F07%2Fup-helium-1024x560.jpg",
+        "https://zupimages.net/up/19/51/rb6d.jpg",
       isOk: false,
       name: "Des ballons"
     }
@@ -76,7 +76,7 @@ const images = [
     },
     {
       url:
-        "https://www.faceaujeu.com/959-large_default/maurice-planete-singes-pop-454.jpg",
+        "https://zupimages.net/up/19/51/a9tm.jpg",
       isOk: false,
       name: "La planète des singes"
     }
@@ -89,9 +89,9 @@ const images = [
     },
     {
       url:
-        "https://images.charentelibre.fr/2015/02/27/5645cdc47971bb340f4d1f04/golden/1000x625/spock-est-mort-agrave.jpg",
+        "https://zupimages.net/up/19/51/cwnc.jpg",
       isOk: false,
-      name: "Spock "
+      name: "Monsieur Spock "
     },
     {
       url: "https://www.maison-bianchi.fr/media/Christiaan-Huygens.jpg",
@@ -100,7 +100,7 @@ const images = [
     },
     {
       url:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Johannes_Kepler_1610.jpg/220px-Johannes_Kepler_1610.jpg",
+        "https://zupimages.net/up/19/51/0wyi.jpg",
       isOk: false,
       name: "Johannes Kepler"
     }
@@ -156,7 +156,7 @@ const Game1 = props => {
       <div className="game1-message-crypt">
         {count.message[0]} {count.message[1]} {count.message[2]}
       </div>
-      <div className="game1-next-button">button</div>
+      {/* <div className="game1-next-button">button</div> */}
     </div>
   );
 };
