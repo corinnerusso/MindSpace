@@ -3,14 +3,10 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Decrypt from "./components/Decrypt";
-
-
 import GameTwo from "./components/Game2";
-
 import Game1 from "./components/Game1";
 import { BrowserRouter } from "react-router-dom";
 import Context from "./components/Context";
-
 
 function App() {
   const [count, setCount] = useState({
