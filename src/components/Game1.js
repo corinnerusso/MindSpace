@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 import "../components/game1.css";
 import Context from "./Context";
 
 const question = [
-  "Comment sappelle la planète la plus proche de la Terre ?",
+  "Comment s'appelle la planète la plus proche de la Terre ?",
   "Quel véhicule l'homme emploie-t-il pour aller dans l'espace ?",
   "De quelle planète vient Choubaka ?",
   "Qui a découvert Titan, un satellite de Saturne ?"
@@ -109,8 +110,44 @@ const images = [
 
 const Game1 = props => {
   const { count, setCount } = useContext(Context);
+  let nextPage = "";
 
   let { id } = useParams();
+
+  const handleClick = e => {
+    switch (id) {
+      case "0":
+        if (e.target.id === "0") {
+          nextPage = "../game2/0";
+          setCount({ message: "N F ? ? ? ? ? ? ? ? ? ? ? ? ? !" });
+          props.history.push(nextPage);
+        }
+        return;
+      case "1":
+        if (e.target.id === "2") {
+          nextPage = "../game2/1";
+          setCount({ message: "N F S S Z _ ? ? ? ? ? ? ? ? ? !" });
+          props.history.push(nextPage);
+        }
+        return;
+      case "2":
+        if (e.target.id === "0") {
+          nextPage = "../game2/1";
+          setCount({ message: "N F S S Z _ D I S J ? ? ? ? ? !" });
+          props.history.push(nextPage);
+        }
+        return;
+      case "3":
+        if (e.target.id === "2") {
+          nextPage = "../game2/1";
+          setCount({ message: "N F S S Z _ D I S J T U N B ? !" });
+          props.history.push(nextPage);
+        }
+        return;
+      default:
+        break;
+    }
+  };
 
   return (
     <div className="game1-parent">
@@ -120,16 +157,20 @@ const Game1 = props => {
           <div className="game1-images-container">
             <p>{images[id][0].name}</p>
             <img
+              id="0"
               className="game1-images-image"
               src={images[id][0].url}
               alt="planet"
+              onClick={handleClick}
             />
           </div>
           <div className="game1-images-container">
             <img
+              id="1"
               className="game1-images-image"
               src={images[id][1].url}
               alt="planet"
+              onClick={handleClick}
             />
             <p>{images[id][1].name}</p>
           </div>
@@ -138,6 +179,7 @@ const Game1 = props => {
           <div className="game1-images-container">
             <p>{images[id][2].name}</p>
             <img
+              id="2"
               className="game1-images-image"
               src={images[id][2].url}
               alt="planet"
@@ -145,6 +187,7 @@ const Game1 = props => {
           </div>
           <div className="game1-images-container">
             <img
+              id="3"
               className="game1-images-image"
               src={images[id][3].url}
               alt="planet"
@@ -153,9 +196,7 @@ const Game1 = props => {
           </div>
         </div>
       </div>
-      <div className="game1-message-crypt">
-        {count.message[0]} {count.message[1]} {count.message[2]}
-      </div>
+      <div className="game1-message-crypt">{count.message}</div>
       <div className="game1-next-button">button</div>
     </div>
   );

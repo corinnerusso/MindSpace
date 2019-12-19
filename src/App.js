@@ -10,21 +10,19 @@ import Context from "./components/Context";
 
 function App() {
   const [count, setCount] = useState({
-    message: ["?", "?", "?", "?", "?", "?", "?", "?"]
+    message: "? ? ? ? ? ? ? ? ? ? ? ? ? ? ? !"
   });
   return (
-
     <Context.Provider value={{ count, setCount }}>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/game1/:id" component={Game1} />
-    <Route path="/game2" component={GameTwo} />
+          <Route path="/game2" component={GameTwo} />
           <Route path="/decrypt" component={Decrypt} />
         </Switch>
       </BrowserRouter>
     </Context.Provider>
-
   );
 }
 
