@@ -22,13 +22,14 @@
 .button {
   min-width: 100vh;
 }
-.button:hover {
+.play:hover {
   -webkit-animation: ani 0.7s steps(22) forwards;
   animation: ani 0.7s steps(22) forwards;
+  background: yellow;
  }
 
 .play {
-  color: black;
+  color: bla;
   width: 18vw;
   height: 10vh;
   font-size: 5vh;
