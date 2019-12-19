@@ -1,8 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
-import ContextMessage from "../components/Context";
-
 import "../components/game1.css";
+import Context from "./Context";
 
 const question = [
   "Comment sappelle la planète la plus proche de la Terre ?",
@@ -108,9 +107,10 @@ const images = [
   ]
 ];
 
-const Game1 = () => {
+const Game1 = props => {
+  const { count, setCount } = useContext(Context);
+
   let { id } = useParams();
-  const message = useContext(ContextMessage);
 
   return (
     <div className="game1-parent">
@@ -153,7 +153,9 @@ const Game1 = () => {
           </div>
         </div>
       </div>
-      <div className="game1-message-crypt">k{message}</div>
+      <div className="game1-message-crypt">
+        {count.message[0]} {count.message[1]} {count.message[2]}
+      </div>
       <div className="game1-next-button">button</div>
     </div>
   );
