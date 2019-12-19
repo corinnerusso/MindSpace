@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Decrypt from "./components/Decrypt";
-import Game from "./components/Game";
+import Game from './components/Game';
 
 function App() {
   return (

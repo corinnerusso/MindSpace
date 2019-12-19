@@ -1,10 +1,61 @@
-.App {
+@font-face {
+  font-family: "STARWARS";
+  src: url('/STARWARS.ttf');
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
+  min-height: 100vh;
+  ;
+}
+.title {
+  font-family: 'STARWARS';
+  font-size: 20vh;
+}
+.title, .regles { 
+  text-align: center;
+  color: #fff;
+}
+.button {
+  min-width: 100vh;
+}
+.button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+ }
+
+.play {
+  color: black;
+  width: 18vw;
+  height: 10vh;
+  font-size: 5vh;
+  border-radius: 20px;
+}
+body, html {
+	background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
+  background-color: black;
+  animation: space-animation 60s linear infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-size: 184px 92px;
+  box-shadow: inset 20px 2px 50px rgba(0,0,0,1), 0 0 100px rgba(79,193,233,0.4);
+	border-radius: 100%;
+	animation: animate 6s linear infinite;
+	transform: rotate(-15deg);
+
+
+@keyframes animate {
+	from {
+		background-position: 184px 0;
+	}
+}
+@keyframes space-animation {
+  from {
+      background-position-y: -100%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
