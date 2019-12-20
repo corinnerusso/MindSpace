@@ -40,20 +40,17 @@ const images = [
       name: "Un OVNI"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/oxj8.jpg",
+      url: "https://zupimages.net/up/19/51/oxj8.jpg",
       isOk: false,
       name: "Un avion"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/63es.jpg",
+      url: "https://zupimages.net/up/19/51/63es.jpg",
       isOk: true,
       name: "Une navette spatiale"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/rb6d.jpg",
+      url: "https://zupimages.net/up/19/51/rb6d.jpg",
       isOk: false,
       name: "Des ballons"
     }
@@ -76,8 +73,7 @@ const images = [
       name: "Smiley Planet"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/a9tm.jpg",
+      url: "https://zupimages.net/up/19/51/a9tm.jpg",
       isOk: false,
       name: "La planète des singes"
     }
@@ -89,8 +85,7 @@ const images = [
       name: "Isaac Newton"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/cwnc.jpg",
+      url: "https://zupimages.net/up/19/51/cwnc.jpg",
       isOk: false,
       name: "Monsieur Spock "
     },
@@ -100,8 +95,7 @@ const images = [
       name: "Christiaan Huygens"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/0wyi.jpg",
+      url: "https://zupimages.net/up/19/51/0wyi.jpg",
       isOk: false,
       name: "Johannes Kepler"
     }
@@ -154,45 +148,41 @@ const Game1 = props => {
       <h2>{question[id]}</h2>
       <div className="game1-images-parent">
         <div className="game1-images-children1">
-          <div className="game1-images-container">
+          <div className="game1-images-container" onClick={handleClick} id="0">
             <p>{images[id][0].name}</p>
             <img
               id="0"
               className="game1-images-image"
               src={images[id][0].url}
               alt="planet"
-              onClick={handleClick}
             />
           </div>
-          <div className="game1-images-container">
+          <div className="game1-images-container" onClick={handleClick} id="1">
             <img
               id="1"
               className="game1-images-image"
               src={images[id][1].url}
               alt="planet"
-              onClick={handleClick}
             />
             <p>{images[id][1].name}</p>
           </div>
         </div>
         <div className="game1-images-children1">
-          <div className="game1-images-container">
+          <div className="game1-images-container" onClick={handleClick} id="2">
             <p>{images[id][2].name}</p>
             <img
               id="2"
               className="game1-images-image"
               src={images[id][2].url}
               alt="planet"
-              onClick={handleClick}
             />
           </div>
-          <div className="game1-images-container">
+          <div className="game1-images-container" onClick={handleClick} id="3">
             <img
               id="3"
               className="game1-images-image"
               src={images[id][3].url}
               alt="planet"
-              onClick={handleClick}
             />
             <p>{images[id][3].name}</p>
           </div>
