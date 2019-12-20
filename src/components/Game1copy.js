@@ -41,40 +41,39 @@ const select = [
 ];
 
 const Game1 = props => {
+  let { id } = useParams();
   const { count, setCount } = useContext(Context);
-  const { answer, setAnswer } = useState("");
-  const { select1, setSelect1 } = useState(0);
-  const { select2, setSelect2 } = useState("");
-  const { select3, setSelect3 } = useState("");
+  const [select1, setSelect1] = useState(select[id][0]);
+  const [select2, setSelect2] = useState(select[id][1]);
+  const [select3, setSelect3] = useState(select[id][2]);
   let nextPage = "";
 
-  let { id } = useParams();
-
   const handleClick = e => {
+    let result = `${select1}${select2}${select3}`;
     switch (id) {
       case "0":
-        if (answer === "earthsaturneuranus") {
+        if (result === "earthsaturneuranus") {
           nextPage = "../game1/1";
           setCount({ message: "N F S S ? ? ? ? ? ? ? ? ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "1":
-        if (answer === "orangebluewhite") {
+        if (result === "orangebluewhite") {
           nextPage = "../game1/2";
           setCount({ message: "N F S S Z _ D I ? ? ? ? ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "2":
-        if (answer === "earthmarsneptune") {
+        if (result === "earthmarsneptune") {
           nextPage = "../game1/3";
           setCount({ message: "N F S S Z _ D I S J T U ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "3":
-        if (answer === "spiritcuriosityinsight") {
+        if (result === "spiritcuriosityinsight") {
           nextPage = "../decrypt";
           setCount({ message: "N F S S Z _ D I S J T U N B T !" });
           props.history.push(nextPage);
@@ -86,13 +85,11 @@ const Game1 = props => {
   };
 
   const handleChange1 = e => {
-    setSelect1(prevState => prevState + 1);
-    console.log(select1);
+    setSelect1(e.target.value);
   };
 
   const handleChange2 = e => {
     setSelect2(e.target.value);
-    console.log(select1);
   };
 
   const handleChange3 = e => {
@@ -108,28 +105,30 @@ const Game1 = props => {
           <div className="answer">SELECT RIGHT ANSWER</div>
           <div className="select">
             <select name="space1" id="space1" onChange={handleChange1}>
-              <option value="ONE">ONE</option>
-              <option value="TWO">TWO</option>
-              <option value="THREE">THREE</option>
+              <option value={select[id][0]}>{select[id][0]}</option>
+              <option value={select[id][1]}>{select[id][1]}</option>
+              <option value={select[id][2]}>{select[id][2]}</option>
             </select>
 
             <select name="space2" id="space2" onChange={handleChange2}>
-              <option value="ONEone">ONE</option>
-              <option value="ONEtwo">TWO</option>
-              <option value="ONEthree">THREE</option>
+              <option value={select[id][1]}>{select[id][1]}</option>
+              <option value={select[id][2]}>{select[id][2]}</option>
+              <option value={select[id][0]}>{select[id][0]}</option>
             </select>
 
             <select name="space3" id="space3" onChange={handleChange3}>
-              <option value="ONE4161">ONE</option>
-              <option value="ONE65468">TWO</option>
-              <option value="ONE6849847">THREE</option>
+              <option value={select[id][2]}>{select[id][2]}</option>
+              <option value={select[id][0]}>{select[id][0]}</option>
+              <option value={select[id][1]}>{select[id][1]}</option>
             </select>
           </div>
         </div>
       </div>
 
       <div className="game1-message-crypt">{count.message}</div>
-      <div className="game1-next-button">button</div>
+      <button className="game1-next-button" onClick={handleClick}>
+        button
+      </button>
     </div>
   );
 };

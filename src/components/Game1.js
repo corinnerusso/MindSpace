@@ -132,14 +132,14 @@ const Game1 = props => {
         return;
       case "2":
         if (e.target.id === "0") {
-          nextPage = "../game2/1";
+          nextPage = "../game2/2";
           setCount({ message: "N F S S Z _ D I S J ? ? ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "3":
         if (e.target.id === "2") {
-          nextPage = "../game2/1";
+          nextPage = "../game2/3";
           setCount({ message: "N F S S Z _ D I S J T U N B ? !" });
           props.history.push(nextPage);
         }
@@ -183,6 +183,7 @@ const Game1 = props => {
               className="game1-images-image"
               src={images[id][2].url}
               alt="planet"
+              onClick={handleClick}
             />
           </div>
           <div className="game1-images-container">
@@ -191,6 +192,7 @@ const Game1 = props => {
               className="game1-images-image"
               src={images[id][3].url}
               alt="planet"
+              onClick={handleClick}
             />
             <p>{images[id][3].name}</p>
           </div>

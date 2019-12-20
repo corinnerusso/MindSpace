@@ -14,7 +14,7 @@ const Home = () => {
         tempor nulla culpa.
       </div>
       <div className="button">
-        <Link to="/game">
+        <Link to="/game1/0">
           <button className="play">PLAY</button>
         </Link>
       </div>
