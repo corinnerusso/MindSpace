@@ -20,22 +20,21 @@ h2 {
   font-size: 4rem;
   color: #333;
 
-  text-shadow: 2px 2px 0 rgb(208, 211, 58), 2px -2px 0 rgb(208, 211, 58), -2px 2px 0 rgb(208, 211, 58), -2px -2px 0 rgb(208, 211, 58), 2px 0px 0 rgb(208, 211, 58), 0px 2px 0 rgb(208, 211, 58), -2px 0px 0 rgb(208, 211, 58), 0px -2px 0 rgb(208, 211, 58);
-
+  text-shadow: 2px 2px 0 rgb(208, 211, 58), 2px -2px 0 rgb(208, 211, 58),
+    -2px 2px 0 rgb(208, 211, 58), -2px -2px 0 rgb(208, 211, 58),
+    2px 0px 0 rgb(208, 211, 58), 0px 2px 0 rgb(208, 211, 58),
+    -2px 0px 0 rgb(208, 211, 58), 0px -2px 0 rgb(208, 211, 58);
 }
 
 .game1-images-parent {
   display: flex;
 
   flex-direction: column;
-
 }
 
 .game1-images-children1 {
   display: flex;
   justify-content: center;
-
-
 }
 
 .game1-images-image {
@@ -53,12 +52,50 @@ h2 {
   margin: 0 auto;
   font-size: 2rem;
   text-align: center;
+
 }
+
+/* .game1-next-button {
+  background-color: white;
+  width: 5%;
+  margin: 0 auto;
+} */
 
 .game1-next-button {
   background-color: white;
-  width: 10%;
+  width: 5%;
   margin: 0 auto;
+  animation: rotate 0.3s linear 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(25deg);
+  }
+  24% {
+    transform: rotate(0deg);
+  }
+  36% {
+    transform: rotate(-25deg);
+  }
+  48% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(25deg);
+  }
+  72% {
+    transform: rotate(0deg);
+  }
+  84% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .game1-images-container {
@@ -73,6 +110,7 @@ h2 {
   padding-left: 10px;
   -webkit-box-shadow: inset 1px 2px 0px 0px #333, 2px 2px 9px 0px #A59A22, 5px 5px 15px 5px rgba(255, 255, 255, 0);
   box-shadow: inset 1px 2px 0px 0px #333, 2px 2px 9px 0px #A59A22;
+
 }
 
 .game1-images-container:hover {

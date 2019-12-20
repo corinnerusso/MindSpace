@@ -9,7 +9,7 @@ const Home = () => {
       Installé sur ton canapé, un laptop sur les jambes, tu reçois un SOS venu de l’espace. Tu dois résoudre des énigmes pour découvrir un message à délivrer à l’Univers !!
       </div>
       <div className="button">
-        <Link to="/game">
+        <Link to="/game1/0">
           <button className="play">PLAY</button>
         </Link>
       </div>
