@@ -19,12 +19,12 @@ const images = [
   [
     "https://telescopicwatch.com/wp-content/uploads/2019/04/01-Zeta-Puppis.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sirius_A_and_B_artwork.jpg",
-    "http://fonds-ecran.widewallpapershd.info/file/3208/728x410/16:9/hot-red-star_1253980163.jpg"
+    "https://zupimages.net/up/19/51/ajfv.jpg"
   ],
   [
     "https://images-assets.nasa.gov/image/PIA01142/PIA01142~small.jpg",
     "https://images-assets.nasa.gov/image/PIA00122/PIA00122~small.jpg",
-    "https://images-assets.nasa.gov/image/PIA04591/PIA04591~orig.jpg"
+    "https://zupimages.net/up/19/51/95y7.jpg"
   ],
   [
     "https://images-assets.nasa.gov/image/PIA05137/PIA05137~small.jpg",
@@ -34,10 +34,10 @@ const images = [
 ];
 
 const select = [
-  ["uranus", "saturne", "earth"],
-  ["blue", "white", "red"],
-  ["neptune", "earth", "mars"],
-  ["spirit", "insight", "curiosity"]
+  ["Uranus", "Saturne", "Terre"],
+  ["Bleue", "Blanche", "Rouge"],
+  ["Neptune", "Terre", "Mars"],
+  ["Spirit", "Insight", "Curiosity"]
 ];
 
 const Game1 = props => {
@@ -55,21 +55,21 @@ const Game1 = props => {
     let result = `${select1}${select2}${select3}`;
     switch (id) {
       case "0":
-        if (result === "earthsaturneuranus") {
+        if (result === "terresaturneuranus") {
           nextPage = "../game1/1";
           setCount({ message: "N F S S ? ? ? ? ? ? ? ? ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "1":
-        if (result === "redbluewhite") {
+        if (result === "rougebleueblanche") {
           nextPage = "../game1/2";
           setCount({ message: "N F S S Z _ D I ? ? ? ? ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "2":
-        if (result === "earthmarsneptune") {
+        if (result === "terremarsneptune") {
           nextPage = "../game1/3";
           setCount({ message: "N F S S Z _ D I S J T U ? ? ? !" });
           props.history.push(nextPage);
@@ -144,7 +144,7 @@ const Game1 = props => {
       <div className="contain">
         <div className="question"></div>
         <div className="container">
-          <div className="answer">SELECT RIGHT ANSWER</div>
+          <div className="answer">CHOISISSEZ LA BONNE REPONSE</div>
           <div className="images">
             <img src={image1} alt="planet" />
             <img src={image2} alt="planet" />
@@ -173,9 +173,11 @@ const Game1 = props => {
       </div>
 
       <div className="game1-message-crypt">{count.message}</div>
+      <div className="divbutton">
       <button className="game1-next-button" onClick={handleClick}>
-        button
+        Valider
       </button>
+      </div>
     </div>
   );
 };
