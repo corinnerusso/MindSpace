@@ -47,19 +47,28 @@ h2 {
 }
 
 .game1-message-crypt {
-  background-color: yellow;
-  width: 60%;
+  color: white;
+  width: 50%;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
-
+  text-align: center;
+ animation-duration: 3s;
+ animation-name: slidein;
+ animation-iteration-count: 1;
 }
 
-/* .game1-next-button {
-  background-color: white;
-  width: 5%;
-  margin: 0 auto;
-} */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 
 .game1-next-button {
   background-color: white;
@@ -99,15 +108,14 @@ h2 {
 }
 
 .game1-images-container {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   color: white;
   font-size: 2rem;
   margin: 25px;
   width: 30%;
   border-radius: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
   -webkit-box-shadow: inset 1px 2px 0px 0px #333, 2px 2px 9px 0px #A59A22, 5px 5px 15px 5px rgba(255, 255, 255, 0);
   box-shadow: inset 1px 2px 0px 0px #333, 2px 2px 9px 0px #A59A22;
 
@@ -123,6 +131,7 @@ p {
   display: flex;
   text-align: center;
   font-size: 30px;
+  
 }
 
 .img:hover {
