@@ -43,7 +43,8 @@
 body, html {
 	background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
   background-color: black;
-  animation: space-animation 40s linear infinite;
+  background-repeat: repeat;
+  animation: space-animation 100s linear infinite;
 }
 
 @keyframes animate {
@@ -53,7 +54,7 @@ body, html {
 }
 @keyframes space-animation {
   from {
-      background-position-y: -100%;
+      background-position-y: -5500%;
   }
 }
 
