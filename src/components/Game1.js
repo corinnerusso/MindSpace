@@ -40,20 +40,17 @@ const images = [
       name: "Un OVNI"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/oxj8.jpg",
+      url: "https://zupimages.net/up/19/51/oxj8.jpg",
       isOk: false,
       name: "Un avion"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/63es.jpg",
+      url: "https://zupimages.net/up/19/51/63es.jpg",
       isOk: true,
       name: "Une navette spatiale"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/rb6d.jpg",
+      url: "https://zupimages.net/up/19/51/rb6d.jpg",
       isOk: false,
       name: "Des ballons"
     }
@@ -76,8 +73,7 @@ const images = [
       name: "Smiley Planet"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/a9tm.jpg",
+      url: "https://zupimages.net/up/19/51/a9tm.jpg",
       isOk: false,
       name: "La planète des singes"
     }
@@ -89,8 +85,7 @@ const images = [
       name: "Isaac Newton"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/cwnc.jpg",
+      url: "https://zupimages.net/up/19/51/cwnc.jpg",
       isOk: false,
       name: "Monsieur Spock "
     },
@@ -100,8 +95,7 @@ const images = [
       name: "Christiaan Huygens"
     },
     {
-      url:
-        "https://zupimages.net/up/19/51/0wyi.jpg",
+      url: "https://zupimages.net/up/19/51/0wyi.jpg",
       isOk: false,
       name: "Johannes Kepler"
     }
