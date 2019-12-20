@@ -5,10 +5,10 @@ import "../components/game1.css";
 import Context from "./Context";
 
 const question = [
-  "Classez ces planètes de la plus proche du Soleil a la plus éloignée",
-  "classez ces couleurs d'étoiles de la plus froide a la plus chaude",
-  "classez ces planetes du plus petit nombre de satellites au plus grand",
-  "classez ces rovers par date d'aterrissage de la plus ancienne a la plus recente"
+  "Classez ces planètes de la plus proche du Soleil à la plus éloignée",
+  "Classez ces couleurs d'étoiles de la plus froide à la plus chaude",
+  "Classez ces planetes du plus petit nombre de satellites au plus grand",
+  "Classez ces rovers par date d'aterrissage de la plus ancienne à la plus recente"
 ];
 const images = [
   [

@@ -199,7 +199,6 @@ const Game1 = props => {
         </div>
       </div>
       <div className="game1-message-crypt">{count.message}</div>
-      <div className="game1-next-button">button</div>
     </div>
   );
 };
