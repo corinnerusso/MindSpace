@@ -20,6 +20,7 @@ img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  border: dashed 1px yellow;
 }
 
 .images {
@@ -34,21 +35,26 @@ select {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
+  border: dashed 1px yellow;
   margin: 0;
   display: block;
   width: 21%;
   font-size: 2em;
-  color: white;
+  color: yellow;
   text-align: center;
-  background-color: grey;
+  background-color: black;
   margin-top: 3%;
   padding: 1% 0 1% 8%;
 }
 .divbutton {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .game1-next-button {
-  padding: 0.5% 1%;
+  padding: 10px 20px;
   font-size: 30px;
+  color: yellow;
+  background-color: black;
+  border: dashed 1px yellow;
+  border-radius: 10px;
 }

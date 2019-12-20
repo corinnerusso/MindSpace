@@ -31,7 +31,7 @@ const Decrypt = () => {
       </div>
       <input type="text" onChange={decode} />
 
-      <div className="game1-message-crypt">{count.message}</div>
+      <div className="game1-message-crypt-animated">{count.message}</div>
     </div>
   );
 };

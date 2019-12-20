@@ -53,6 +53,15 @@ h2 {
   font-size: 3rem;
   text-align: center;
   text-align: center;
+}
+
+.game1-message-crypt-animated {
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  text-align: center;
   animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: 1;

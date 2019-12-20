@@ -55,28 +55,28 @@ const Game1 = props => {
     let result = `${select1}${select2}${select3}`;
     switch (id) {
       case "0":
-        if (result === "terresaturneuranus") {
+        if (result === "TerreSaturneUranus") {
           nextPage = "../game1/1";
           setCount({ message: "N F S S ? ? ? ? ? ? ? ? ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "1":
-        if (result === "rougebleueblanche") {
+        if (result === "RougeBleueBlanche") {
           nextPage = "../game1/2";
           setCount({ message: "N F S S Z _ D I ? ? ? ? ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "2":
-        if (result === "terremarsneptune") {
+        if (result === "TerreMarsNeptune") {
           nextPage = "../game1/3";
           setCount({ message: "N F S S Z _ D I S J T U ? ? ? !" });
           props.history.push(nextPage);
         }
         return;
       case "3":
-        if (result === "spiritcuriosityinsight") {
+        if (result === "SpiritCuriosityInsight") {
           nextPage = "../decrypt";
           setCount({ message: "N F S S Z _ D I S J T U N B T !" });
           props.history.push(nextPage);
@@ -174,9 +174,9 @@ const Game1 = props => {
 
       <div className="game1-message-crypt">{count.message}</div>
       <div className="divbutton">
-      <button className="game1-next-button" onClick={handleClick}>
-        Valider
-      </button>
+        <button className="game1-next-button" onClick={handleClick}>
+          Valider
+        </button>
       </div>
     </div>
   );
