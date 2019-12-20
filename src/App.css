@@ -1,6 +1,6 @@
 @font-face {
   font-family: "STARWARS";
-  src: url('/STARWARS.ttf');
+  src: url("STARWARS.ttf");
 }
 .home {
   display: flex;
@@ -9,16 +9,15 @@
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  ;
 }
 .title {
-  font-family: 'STARWARS';
+  font-family: "STARWARS";
   font-size: 20vh;
   text-align: center;
   color: yellow;
 }
 .regles {
-  font-family: 'STARWARS';
+  font-family: "STARWARS";
   font-size: 5vh;
   text-align: center;
   color: #fff;
@@ -31,7 +30,7 @@
   -webkit-animation: ani 0.7s steps(22) forwards;
   animation: ani 0.7s steps(22) forwards;
   background: yellow;
- }
+}
 
 .play {
   color: black;
@@ -40,21 +39,22 @@
   font-size: 5vh;
   border-radius: 20px;
 }
-body, html {
-	background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
+body,
+html {
+  background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
   background-color: black;
   background-repeat: repeat;
   animation: space-animation 100s linear infinite;
 }
 
 @keyframes animate {
-	from {
-		background-position: 184px 0;
-	}
+  from {
+    background-position: 184px 0;
+  }
 }
 @keyframes space-animation {
   from {
-      background-position-y: -5501%;
+    background-position-y: -5501%;
   }
 }
 
