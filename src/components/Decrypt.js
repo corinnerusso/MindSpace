@@ -1,6 +1,7 @@
 import React, { useState, useContext, useCallback } from "react";
 import "./decrypt.css";
 import Context from "./Context";
+import track from "../wild.mp3";
 
 const Decrypt = () => {
   const { count, setCount } = useContext(Context);
@@ -8,6 +9,8 @@ const Decrypt = () => {
   const decode = (e, id) => {
     if (e.target.value === "1") {
       setCount({ message: "M E R R Y - C H R I S T M A S !", id: 1 });
+      var audio = new Audio(track);
+      audio.play();
     }
   };
 
