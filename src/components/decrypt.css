@@ -1,11 +1,17 @@
 .decrypt-todo {
   color: white;
-  justify-content: center;
-  padding-top: 50px;
   font-size: 3rem;
 }
 
 .decrypt-algo {
   color: yellow;
+  font-size: 2rem;
+}
 
+.flex-parent {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }

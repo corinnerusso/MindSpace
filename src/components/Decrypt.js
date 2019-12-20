@@ -12,7 +12,7 @@ const Decrypt = () => {
   };
 
   return (
-    <div>
+    <div className="flex-parent">
       <h2>Mais ce message est crypté!!!!!</h2>
       <p className="decrypt-todo">
         Résous l'algo pour découvrir la clé de cryptage
@@ -25,10 +25,10 @@ const Decrypt = () => {
           {"const answer = key.find (element => element < 6)"}
         </p>
         <p className="decrypt-algo">{"console.log(answer)"}</p>
-        <input type="text" onChange={decode} />
-
-        <div className="game1-message-crypt">{count.message}</div>
       </div>
+      <input type="text" onChange={decode} />
+
+      <div className="game1-message-crypt">{count.message}</div>
     </div>
   );
 };
