@@ -54,7 +54,7 @@ body, html {
 }
 @keyframes space-animation {
   from {
-      background-position-y: -5500%;
+      background-position-y: -5501%;
   }
 }
 
