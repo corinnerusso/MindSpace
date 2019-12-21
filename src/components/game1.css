@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game1-parent {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+
+  width: 90%;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  color: #333;
+
+  text-shadow: 2px 2px 0 rgb(208, 211, 58), 2px -2px 0 rgb(208, 211, 58),
+    -2px 2px 0 rgb(208, 211, 58), -2px -2px 0 rgb(208, 211, 58),
+    2px 0px 0 rgb(208, 211, 58), 0px 2px 0 rgb(208, 211, 58),
+    -2px 0px 0 rgb(208, 211, 58), 0px -2px 0 rgb(208, 211, 58);
+}
+
+.game1-images-parent {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.game1-images-children1 {
+  display: flex;
+  justify-content: center;
+}
+
+.game1-images-image {
+  background-color: grey;
+  height: 200px;
+  width: 200px;
+  margin: 10px 20px;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.game1-message-crypt {
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  text-align: center;
+}
+
+.game1-message-crypt-animated {
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* .game1-next-button {
+  background-color: white;
+  width: 5%;
+  margin: 0 auto;
+  animation: rotate 0.3s linear 1;
+} */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(25deg);
+  }
+  24% {
+    transform: rotate(0deg);
+  }
+  36% {
+    transform: rotate(-25deg);
+  }
+  48% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(25deg);
+  }
+  72% {
+    transform: rotate(0deg);
+  }
+  84% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.game1-images-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  margin: 25px;
+  width: 30%;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 1px 2px 0px 0px #333, 2px 2px 9px 0px #a59a22,
+    5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: inset 1px 2px 0px 0px #333, 2px 2px 9px 0px #a59a22;
+  cursor: pointer;
+}
+
+.game1-images-container:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+  background: #050505;
+}
+
+.game1-images-container p {
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  width: 35%;
+}
+
+.img:hover {
+  width: 300px;
+  height: 400px;
+}
